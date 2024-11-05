@@ -1,0 +1,10 @@
+/* Home.css */
+.blurred {
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+
+/* Optional: Add a smooth transition to your modal overlay */
+.modal-overlay {
+    transition: opacity 0.3s ease-in-out;
+}

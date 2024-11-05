@@ -1,0 +1,153 @@
+.avatar-maintain-container {
+  width: 1200px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 40px; /* Add padding */
+  background-color: #b2c9f35b; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.568); /* Soft shadow */
+  position: relative; /* Position for the wave background */
+}
+
+.title {
+  font-size: 2.5rem; /* Large title size */
+  text-align: center; /* Center align title */
+  margin-bottom: 30px; /* Space below the title */
+  color: #333; /* Dark text */
+}
+
+.ManageSection {
+  display: flex; /* Flexbox for row layout */
+  gap: 40px; /* Space between columns */
+}
+
+
+.upload-section {
+  flex: 1; /* Flex-grow */
+  background-color: #0000004f; /* Light gray background for the upload section */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px; /* Padding */
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.5); /* Light shadow */
+}
+
+.upload-form {
+  display: flex; /* Flexbox for form */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.form-title {
+  font-size: 1.8rem; /* Form title size */
+  color: #ffffff; /* Primary blue color */
+  margin-bottom: 25px; /* Space below title */
+  text-align: center; /* Center align */
+}
+
+.input-group {
+  margin-bottom: 20px; /* Space below each input */
+  display: flex; /* Use flexbox for the label and input alignment */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.input-label {
+  font-weight: bold; /* Bold labels */
+  margin-bottom: 5px; /* Space below labels */
+  color: #fff; /* White text for labels */
+}
+
+.input-field {
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px; /* Padding */
+  font-size: 1rem; /* Font size */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  color: white; /* White text */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color */
+}
+
+.input-field:focus {
+  border-color: #007bffa2; /* Change border color on focus */
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+}
+
+.button-group {
+  display: flex; /* Flexbox for buttons */
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 15px; /* Space above buttons */
+}
+
+.btn-m {
+  flex: 1; /* Make buttons take equal space */
+  padding: 12px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor */
+  margin-right: 10px; /* Add margin to the right for spacing */
+  transition: transform 0.2s, background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-m:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.btn-m-upload {
+  background-color: #6200ff; /* Custom color */
+}
+
+.btn-m-email {
+  background-color: #46a728; /* Success green */
+}
+
+.btn-m:hover {
+  color: #333;
+  box-shadow: 0 10px 25px rgba(132, 0, 255, 0.5); /* Shadow on hover */
+  transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+.preview-section {
+  flex: 1; /* Flex-grow */
+  background-color: #0000004f; /* Light gray background for the upload section */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px; /* Padding */
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.5); /* Light shadow */
+}
+
+.preview-title {
+  font-size: 1.8rem; /* Preview title size */
+  color: #ffffff; /* Primary blue color */
+  margin-bottom: 20px; /* Space below title */
+  text-align: center; /* Center align */
+}
+
+.image-preview-container {
+  display: flex; /* Flexbox for images */
+  flex-wrap: wrap; /* Wrap images to the next line */
+  gap: 15px; /* Space between images */
+  justify-content: center; /* Center align images */
+}
+
+.image-card {
+  width: 100%; /* Full width of card */
+  max-width: 220px; /* Maximum width for better layout */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Clip overflow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s; /* Smooth transition for scale */
+}
+
+.image-card:hover {
+  transform: scale(1.03); /* Slightly enlarge card on hover */
+}
+
+.img-fluid {
+  max-width: 550px; /* Full width */
+  max-height: 250px; /* Maintain aspect ratio */
+}
+
+.no-images {
+  text-align: center; /* Center align no images message */
+  font-size: 1.2rem; /* Font size */
+  color: #888; /* Light gray text */
+  margin-top: 20px; /* Space above message */
+}

@@ -1,0 +1,191 @@
+.navbar-custom {
+    backdrop-filter: blur(30px);
+    padding: 10px 20px;
+    position: fixed; /* Ensure the navbar stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure the navbar is above other elements */
+    background-color: rgba(0, 0, 0, 0.048);
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a238FF;
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #a238FF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link i {
+    margin-right: 5px;
+}
+
+.logo {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        max-height: 60px;
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-custom {
+        padding: 5px 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .logo {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        max-height: 40px;
+        max-width: 40px;
+    }
+}
+
+.profile-popover {
+    position: absolute;
+    top: 70px; 
+    right: 0; /* Align it with the right side of the profile icon */
+    width: 18em; /* Slightly increase width for better readability */
+    background: #2C2C2C; /* Slightly lighter background for contrast */
+    border: 3px solid #7505dd; /* Add border for definition */
+    box-shadow: 0 0 20px rgba(117, 5, 221, 0.8), 0 0 30px rgba(117, 5, 221, 0.8); /* Stronger glow on hover */
+    transition: 0.3s ease-in-out; /* Smooth transition */
+    clip-path: polygon(30px 0%,
+            100% 0,
+            100% calc(100% - 30px),
+            calc(100% - 30px) 100%,
+            0 100%,
+            0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    padding: 1.5em; /* Add padding for better spacing */
+    z-index: 1001; /* Ensure it's above other elements */
+}
+.popover-content {
+    font-weight: normal; /* Use normal weight for better readability */
+    color: white;
+    display: block;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+
+
+
+.btn-out {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    background: #a238FF;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(30px 0%,
+            100% 0,
+            100% calc(100% - 40px),
+            calc(100% - 30px) 100%,
+            0 100%,
+            0% 40px);
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+}
+
+
+.btn-out:hover {
+    color: #000000;
+    background: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(225, 0, 255);
+}

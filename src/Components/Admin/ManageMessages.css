@@ -1,0 +1,87 @@
+/* Container Styling */
+.contact-management-container {
+  padding: 30px;
+  background-color: #f8f9fa; 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.452);
+}
+
+/* Heading Styling */
+.contact-management-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3d2a5f;
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styling */
+.message-search-bar {
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.contact-search-input {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-search-input:focus {
+  border-color: #6f42c1; 
+  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+.contact-search-input:hover {
+  border-color: #6d3ec5; /* Hover color for input */
+}
+
+/* Table Styling */
+.message-table-container {
+  max-height: 600px; 
+  width: 1200px;
+  overflow-y: auto; 
+  border: 1px solid #dee2e6; 
+  border-radius: 5px; 
+  }
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.contact-thead th {
+  background-color: #3d2a5f; 
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-table tbody tr {
+  background-color: #fdfdfd; 
+  transition: background-color 0.3s;
+}
+
+.contact-table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa; /* Slightly darker for odd rows */
+}
+
+.contact-table tbody tr:hover {
+  background-color: #e9ecef; /* Hover effect for rows */
+  cursor: pointer;
+}
+
+.contact-table td {
+  padding: 12px;
+  border: 1px solid #dee2e6; /* Light border for cells */
+  font-size: 14px;
+  vertical-align: middle; /* Center align vertically */
+}
+
+/* Centered Text */
+.text-center {
+  text-align: center;
+}

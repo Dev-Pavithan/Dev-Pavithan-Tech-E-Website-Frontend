@@ -1,0 +1,246 @@
+/* Container Styling */
+.user-management-container {
+  padding: 30px;
+  background-color: #f8f9fa8a; 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.452);
+}
+
+/* Heading Styling */
+.user-management-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3d2a5f;
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styling */
+.search-input {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+  border-color: #6f42c1; 
+  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+.search-input:hover {
+  border-color: #6d3ec5; /* Hover color for input */
+}
+
+/* Table Styling */
+.table-responsive {
+  max-height: 600px; 
+  overflow-y: auto; 
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-table thead th {
+  background-color: #3d2a5f; 
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.user-table tbody tr {
+  background-color: #fdfdfd; 
+  transition: background-color 0.3s;
+}
+
+.user-table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa; /* Slightly darker for odd rows */
+}
+
+.user-table tbody tr:hover {
+  background-color: #e9ecef; /* Hover effect for rows */
+  cursor: pointer;
+}
+
+.user-table td {
+  padding: 12px;
+  border: 1px solid #dee2e6; /* Light border for cells */
+  font-size: 14px;
+  vertical-align: middle; /* Center align vertically */
+}
+
+/* Centered Text */
+.text-center {
+  text-align: center;
+}
+
+/* Button Styles */
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%; /* Make buttons full width in their containers */
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .user-management-heading {
+    font-size: 1.5rem; /* Smaller font size on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .search-input {
+    font-size: 18px; /* Increase input size on larger screens */
+  }
+}
+/* Modal Background Overlay */
+.reply-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker for more focus */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+/* Modal Container */
+.reply-modal-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px; /* Increased width for a more spacious look */
+  border-radius: 12px; /* Slightly larger border radius for a softer appearance */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Modal Header */
+.reply-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Increased padding for a more luxurious feel */
+  background-color: #f1f3f5; /* Lighter background for a softer header */
+  border-bottom: 1px solid #dee2e6;
+}
+
+.reply-modal-title {
+  font-size: 1.5rem; /* Slightly larger font size */
+  font-weight: bold;
+  color: #343a40;
+  margin: 0;
+}
+
+/* Close Button */
+.reply-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.reply-modal-close:hover {
+  color: #dc3545; /* Change color on hover for feedback */
+}
+
+/* Modal Body */
+.reply-modal-body {
+  padding: 20px; /* Increased padding for comfort */
+}
+
+.reply-modal-label {
+  font-size: 1rem; /* Increased font size */
+  color: #495057;
+  margin-bottom: 6px; /* Slightly increased margin for spacing */
+  display: block;
+}
+
+.reply-modal-input,
+.reply-modal-textarea {
+  width: 100%;
+  padding: 12px; /* Increased padding for better usability */
+  border: 1px solid #ced4da;
+  border-radius: 6px; /* More rounded corners for a modern look */
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 16px; /* More space between inputs */
+  transition: border-color 0.3s; /* Transition for input focus */
+}
+
+.reply-modal-input:focus,
+.reply-modal-textarea:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.reply-modal-textarea {
+  resize: vertical;
+  min-height: 120px; /* Slightly larger minimum height */
+}
+
+/* Modal Footer */
+.reply-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px; /* Increased padding */
+  border-top: 1px solid #dee2e6;
+}
+
+.reply-modal-cancel-btn,
+.reply-modal-send-btn {
+  padding: 10px 20px; /* Increased padding for buttons */
+  font-size: 1rem; /* Standardized font size */
+  border-radius: 6px; /* More rounded corners for buttons */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for button hover */
+}
+
+.reply-modal-cancel-btn {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #ced4da;
+  margin-right: 10px; /* Increased margin for better spacing */
+}
+
+.reply-modal-send-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+}
+
+.reply-modal-send-btn:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px); /* More pronounced entrance */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

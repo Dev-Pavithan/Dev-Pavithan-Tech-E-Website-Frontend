@@ -1,0 +1,47 @@
+/* RegisterModal.css */
+.custom-modal .modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the modal body */
+  .register-modal-body {
+    padding: 2rem; /* Add padding to the modal body */
+  }
+  
+  /* Adjustments to the form inside the modal */
+  .custom-modal .form-group {
+    margin-bottom: 1.5rem; /* Increase space between form elements */
+  }
+  
+  /* Buttons inside the modal */
+  .custom-modal .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .custom-modal .btn-primary:hover {
+    background-color: #0056b3; /* Darken the button on hover */
+  }
+  
+  /* Control input field appearance */
+  .custom-modal .form-control {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the password toggle button */
+  .custom-modal .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  

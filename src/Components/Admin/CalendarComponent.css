@@ -1,0 +1,34 @@
+.calendar-container {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #7f00f500;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(212, 0, 255, 0);
+    background-color: #ffffff;
+}
+
+
+
+.react-calendar {
+    border: none;
+}
+
+.react-calendar__tile {
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.react-calendar__tile--active {
+    background-color: #6f00ff;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.react-calendar__tile--hover {
+    background-color: #f4fff0;
+}
+.highlight-weekend {
+    background-color: #fff0f0;
+}

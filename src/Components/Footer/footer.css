@@ -1,0 +1,81 @@
+.footer {
+    background: linear-gradient(0deg, #361355 0%, #222323 45.46630382537842%, #222323 96.09375%);
+    padding: 10px 0;
+}
+
+.footer-custom {
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer-custom h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-custom p,
+.footer-custom ul,
+.footer-custom li {
+    color: #ffffff;
+}
+
+.footer-custom ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-custom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    text-decoration: underline;
+}
+
+.footer-custom .text-center {
+    padding: 10px 0;
+    color: #ffffff;
+    position: relative; /* Relative positioning to adjust the line */
+}
+
+.footer-custom .text-center::before {
+    content: '';
+    display: block;
+    width: 70%; /* Adjust the width to leave space on the sides */
+    height: 2px;
+    background-color: #ffffff3b;
+    margin: 0 auto; /* Center the line */
+    margin-bottom: 15px; /* Space between the line and the copyright text */
+}
+
+.footer-custom .fab {
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-custom .fab:hover {
+    color: #a238FF;
+    text-shadow: 0 0 10px #a238FF;
+}
+
+.footer-custom .col-lg-4,
+.footer-custom .col-md-6,
+.footer-custom .col-md-12 {
+    margin-bottom: 20px; /* Adjust the space between sections */
+}
+
+/* Center the Quick Links section */
+.footer-custom .quick-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+.footer-custom .quick-links ul {
+    padding: 0; /* Reset padding */
+}
+
+.footer-custom .quick-links li {
+    margin: 5px 0; /* Space between list items */
+}

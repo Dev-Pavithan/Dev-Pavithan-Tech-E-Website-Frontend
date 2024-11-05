@@ -1,0 +1,28 @@
+/* Demo Section */
+.demo-section01 {
+  height: 100vh;
+  background: linear-gradient(#222323 45.46630382537842%, #222323 96.09375%);
+}
+/* Container for the entire demo section */
+.demo-section01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+/* Section styling */
+.demo-section {
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Video styling */
+.demo-video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}

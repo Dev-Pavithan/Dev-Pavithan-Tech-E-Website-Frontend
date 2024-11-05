@@ -1,0 +1,242 @@
+/* package.css
+
+.appContainer {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .pricingContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .cardItem {
+    width: 320px;
+  }
+  
+  .cardLink {
+    position: relative;
+    display: block;
+    background-color: #2a2a3b;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cardLink:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .cardOverlay {
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(42, 42, 59, 0.8), rgba(28, 28, 39, 0.95));
+  }
+  
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .cardArc {
+    width: 50px;
+    height: 50px;
+    fill: #3a3a4e;
+  }
+  
+  .cardThumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4e4e6a;
+  }
+  
+  .cardHeaderText {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cardTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffc107;
+  }
+  
+  .cardStatus {
+    font-size: 1rem;
+    color: #b0b0d6;
+  }
+  
+  .cardDescription {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d1d1e4;
+  }
+  
+  .noPackages {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #c7c7e3;
+    opacity: 0.9;
+  }
+   */
+
+   :root {
+    --surface-color: #222;
+    --curve: 30;
+  }
+
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: radial-gradient(circle at 74% 94%, #222323 0%, 17.5%, rgba(34, 35, 35, 0) 35%),
+    /* radial-gradient(circle at 59% 67%, rgba(22, 87, 217, 0.61) 0%, 14.7%, rgba(22, 87, 217, 0) 30%), */
+    radial-gradient(circle at 1% 57%, rgba(22, 87, 217, 0.38) 0%, 8%, rgba(22, 87, 217, 0) 14%),
+    /* radial-gradient(circle at 13% 9%, rgba(162, 56, 255, 0.24) 0%, 16.5%, rgba(162, 56, 255, 0) 55%), */
+    radial-gradient(circle at 100% 37%, rgba(22, 87, 217, 0.51) 0%, 9%, rgba(22, 87, 217, 0) 18%),
+    radial-gradient(circle at 79% 58%, rgba(162, 56, 255, 0.65) 0%, 17.5%, rgba(162, 56, 255, 0) 35%),
+    radial-gradient(circle at 49% 50%, #222323 0%, 100%, rgba(65, 63, 63, 0) 100%);
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .packagecard {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    border: #222;
+  }
+  
+  .card__image {      
+    width: 100%;
+    border: #222;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .packagecard:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+    border: none;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .packagecard:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+  .packagecard{
+    background-color: rgba(255, 255, 255, 0.055);
+  }
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+  
+  

@@ -1,0 +1,78 @@
+.hero-02 {
+  padding: 50px 0;
+  background: radial-gradient(circle at 74% 94%, #222323 0%, 17.5%, rgba(34, 35, 35, 0) 35%),
+    /* radial-gradient(circle at 59% 67%, rgba(22, 87, 217, 0.61) 0%, 14.7%, rgba(22, 87, 217, 0) 30%), */
+    radial-gradient(circle at 1% 57%, rgba(22, 87, 217, 0.38) 0%, 8%, rgba(22, 87, 217, 0) 14%),
+    /* radial-gradient(circle at 13% 9%, rgba(162, 56, 255, 0.24) 0%, 16.5%, rgba(162, 56, 255, 0) 55%), */
+    radial-gradient(circle at 100% 37%, rgba(22, 87, 217, 0.51) 0%, 9%, rgba(22, 87, 217, 0) 18%),
+    radial-gradient(circle at 79% 58%, rgba(162, 56, 255, 0.65) 0%, 17.5%, rgba(162, 56, 255, 0) 35%),
+    radial-gradient(circle at 49% 50%, #222323 0%, 100%, rgba(65, 63, 63, 0) 100%);
+  background-size: cover;
+}
+
+.faq-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.faq-image img {
+  width: 100%;
+  margin-left: -100px;
+  max-width: 800px;
+  height: auto;
+  margin-top: -80px;
+}
+
+.faq-content {
+  flex: 1;
+  margin-left: 0px;
+  
+}
+
+.FAQ-Head {
+  color: #ddd;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Audiowide', sans-serif;
+
+}
+
+.faq-container {
+  font-family: 'Audiowide', sans-serif;
+  display: flex;
+  color: #ddd;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.faq-item .question {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.faq-item .answer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #e4dfdf;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .faq-layout {
+    flex-direction: column;
+  }
+
+  .faq-image {
+    margin-bottom: 30px;
+  }
+
+  .faq-content {
+    margin-left: 0;
+  }
+}

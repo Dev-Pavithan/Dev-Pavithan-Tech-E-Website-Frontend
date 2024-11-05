@@ -1,0 +1,230 @@
+/* Import Sci-Fi Font */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap'); */
+/* font-family: 'Russo One', sans-serif; */
+/* font-family: 'Quantico', sans-serif; */
+/* font-family: 'Rajdhani', sans-serif; */
+
+
+
+
+/* General Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Audiowide', sans-serif;
+
+
+    background: radial-gradient(circle at 74% 94%, #222323 0%, 17.5%, rgba(34, 35, 35, 0) 35%),
+        radial-gradient(circle at 59% 67%, rgba(22, 87, 217, 0.61) 0%, 14.7%, rgba(22, 87, 217, 0) 30%),
+        radial-gradient(circle at 1% 57%, rgba(22, 87, 217, 0.38) 0%, 8%, rgba(22, 87, 217, 0) 14%),
+        radial-gradient(circle at 13% 9%, rgba(162, 56, 255, 0.24) 0%, 16.5%, rgba(162, 56, 255, 0) 55%),
+        radial-gradient(circle at 100% 37%, rgba(22, 87, 217, 0.51) 0%, 9%, rgba(22, 87, 217, 0) 18%),
+        radial-gradient(circle at 79% 58%, rgba(162, 56, 255, 0.65) 0%, 17.5%, rgba(162, 56, 255, 0) 35%),
+        radial-gradient(circle at 2% 95%, #222323 0%, 8.6%, rgba(34, 35, 35, 0) 20%),
+        radial-gradient(circle at 49% 50%, #000 0%, 100%, rgba(0, 0, 0, 0) 100%);
+    background-size: cover;
+    height: calc(110vh - 0vh);
+    padding-bottom: 70px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Intro Section */
+.intro-section {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.Hello {
+    font-size: 80px;
+    font-weight: bolder;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.5s;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.548);
+    margin-bottom: 60px; 
+
+}
+
+.Tech-E {
+    font-size: 120px;
+    font-weight: bolder;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.5s;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.548);
+    margin-bottom: 60px; 
+
+}
+
+.text {
+    font-size: 80px;
+    color: #ff00ff;
+    font-weight: bolder;
+    text-shadow: 0 0 15px rgba(255, 0, 234, 0.8);
+    margin-bottom: 60px; 
+
+}
+
+.intro-section p {
+    font-size: 30px;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    margin-bottom: 60px; 
+}
+
+/* Button Styles */
+.btn-home {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    background-image: linear-gradient(19deg, #2f003a 0%, #a96dd4 100%);
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+    box-sizing: border-box;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    margin-bottom: 60px; 
+
+}
+
+.btn-home:hover {
+    color: #ffffff;
+    background: #a238FF;
+    background-image: linear-gradient(19deg, #2f003a 0%, #a96dd4 100%);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(183, 0, 255, 0.8), inset 0 0 10px rgba(174, 0, 255, 0.5);
+}
+
+/* Animations */
+@keyframes slideBottom {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Avatar Home */
+.AvaterHome img {
+    filter: brightness(1.1) contrast(1.2);
+    margin-top: 100px;
+}
+
+/* Media Queries */
+
+/* For 18 inch screens */
+@media (min-width: 1920px) {
+    .hero {
+        height: calc(100vh - 0vh);
+    }
+
+    .Hello {
+        font-size: 100px; /* Adjust font size for larger screens */
+    }
+
+    .Tech-E {
+        font-size: 160px; /* Adjust font size for larger screens */
+    }
+
+    .text {
+        font-size: 60px; /* Adjust font size for larger screens */
+    }
+
+    .intro-section p {
+        font-size: 40px; /* Adjust font size for larger screens */
+    }
+}
+
+/* For 14 inch screens */
+@media (min-width: 1366px) and (max-width: 1919px) {
+
+    .Hello {
+        font-size: 80px; /* Adjust font size for medium screens */
+    }
+
+    .Tech-E {
+        font-size: 120px; /* Adjust font size for medium screens */
+    }
+
+    .text {
+        font-size: 50px; /* Adjust font size for medium screens */
+    }
+
+    .intro-section p {
+        font-size: 30px; /* Adjust font size for medium screens */
+    }
+}
+
+/* Samsung devices - Adjustments for common Samsung screen sizes */
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Allow content to determine height */
+        padding: 20px;
+    }
+
+    .Hello {
+        font-size: 50px; /* Smaller font size for mobile */
+    }
+
+    .Tech-E {
+        font-size: 80px; /* Smaller font size for mobile */
+    }
+
+    .text {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .intro-section p {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .AvaterHome img {
+        height: 50vh; /* Reduce image size on mobile */
+        width: 100%; /* Ensure the image fits */
+    }
+
+    .btn-home {
+        width: 120px; /* Smaller button width for mobile */
+        height: 50px; /* Smaller button height for mobile */
+        font-size: 1.2rem; /* Smaller button font size for mobile */
+    }
+}

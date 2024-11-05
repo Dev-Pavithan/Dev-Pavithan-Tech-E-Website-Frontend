@@ -1,0 +1,174 @@
+/* Settings.css */
+
+/* Container styling */
+.settings-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 30px;
+  background-color: #f9fafc;
+  border-radius: 16px;
+  width: 900px;
+  margin: auto;
+  box-shadow: 10px 8px 12px rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+}
+
+/* Profile section */
+.profile-setting-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 60px;
+  text-align: center;
+}
+
+.profile-image-wrapper {
+  width:  180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 16px rgb(0, 0, 0);
+}
+
+.profile-setting-image {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-setting-name {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+/* Profile name and edit icon container */
+.profile-name-edit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Edit icon styling */
+.edit-icon {
+  font-size: 18px;
+  color: #6f3e9c;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.edit-icon:hover {
+  color: #ae00ff;
+}
+
+.profile-setting-email {
+  font-size: 18px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Options section */
+.settings-options {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-button {
+  background: #6f3e9c8e;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  width: 320px;
+  transition: all 0.2s;
+  margin-bottom: 15px;
+}
+
+.option-button:hover {
+  background: #6f3e9cb6;
+}
+
+/* Form styling */
+.option-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: #bdbdc023;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.input-field {
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #333;
+  width: 280px;
+}
+
+.submit-button {
+  background-color: #ae00ff;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s;
+  width: 300px;
+}
+
+.submit-button:hover {
+  background-color: #7a00b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Language selection */
+.language-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 20px;
+}
+
+.language-select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  color: #333;
+}
+.edit-image-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}

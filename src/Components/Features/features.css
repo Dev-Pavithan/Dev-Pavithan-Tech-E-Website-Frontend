@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.Features-Section {
+    background: radial-gradient(circle at 43.97295633951823% 52.83325195312501%, rgba(126, 161, 230, 0.63) 0%, 21.35%, rgba(126, 161, 230, 0) 35%), 
+                radial-gradient(circle at 5.601628621419271% 89.0545654296875%, #000000 0%, 17.5%, rgba(0, 0, 0, 0) 35%), 
+                radial-gradient(circle at 95.35859425862631% 89.99893188476562%, #000000 0%, 20%, rgba(0, 0, 0, 0) 40%), 
+                radial-gradient(circle at 56.95167541503906% 53.199005126953125%, rgba(194, 125, 255, 0.71) 0%, 34.5%, rgba(194, 125, 255, 0) 50%), 
+                radial-gradient(circle at 4.5797475179036455% 9.796346028645834%, #000000 0%, 42%, rgba(0, 0, 0, 0) 70%), 
+                radial-gradient(circle at 93.6865234375% 11.42578125%, #000000 0%, 42%, rgba(0, 0, 0, 0) 70%), 
+                radial-gradient(circle at 48.9013671875% 49.521484375%, #000000 0%, 100%, rgba(0, 0, 0, 0) 100%);
+    height: auto;
+    padding: 50px 90px;
+    margin-top: -48px;
+}
+
+.display-4 {
+    color: white;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.lead {
+    color: aliceblue;
+    font-weight: 400;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.features-icon {
+    font-size: 2rem;
+    color: #d9b8f5;
+    margin-bottom: 0.5rem;
+}
+
+.features-container {
+    width: 350px; 
+    height: 140px; 
+    padding: 1rem; 
+    margin-bottom: 8rem; 
+    background-color: #010101;
+    border-radius: 1rem;
+    border: 1px solid rgb(41, 1, 87);
+    box-shadow: 0px 0px 17px rgb(255, 255, 255);
+    transition: transform 0.3s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.features-container:hover {
+    transform: translateY(-5px);
+}
+
+.features-container h5 {
+    color: white;
+    margin: 0.5rem 0; 
+}
+
+.features-container p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem; 
+}
+
+.features-container-Right {
+    margin-top: 100px;
+    width: 350px; 
+    height: 140px; 
+    padding: 1rem; 
+    margin-bottom: 8rem; 
+    background-color: #010101;
+    border-radius: 1rem;
+    border: 1px solid rgb(41, 1, 87);
+    box-shadow: 0px 0px 17px rgb(255, 255, 255);
+    transition: transform 0.3s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.features-container-Right:hover {
+    transform: translateY(-5px);
+}
+
+.features-container-Right h5 {
+    color: white;
+    margin: 0.5rem 0; 
+}
+
+.features-container-Right p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem; 
+}
+
+.canvas-container {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    max-height: 800px;
+}
+
+@media (min-width: 1200px) {
+    .canvas-container {
+        max-width: 500px; 
+        max-height: 900px;
+    }
+
+    .features-container {
+        width: 350px; 
+    }
+
+    .display-4 {
+        font-size: 3rem; 
+    }
+
+    .lead {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .canvas-container {
+        max-width: 400px; 
+        max-height: 700px;
+    }
+
+    .features-container {
+        width: 350px; 
+    }
+
+    .display-4 {
+        font-size: 2.5rem; 
+    }
+
+    .lead {
+        font-size: 1.25rem; 
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .canvas-container {
+        max-width: 300px; 
+        max-height: 600px;
+    }
+
+    .features-container {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .display-4 {
+        font-size: 2rem; 
+    }
+
+    .lead {
+        font-size: 1.1rem; 
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .canvas-container {
+        max-width: 100%; 
+        max-height: 400px;
+    }
+
+    .features-container {
+        width: 100%; 
+        height: auto; 
+        padding: 1rem; 
+    }
+
+    .display-4 {
+        font-size: 1.5rem; 
+    }
+
+    .lead {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 575px) {
+    .canvas-container {
+        max-width: 100%; 
+        max-height: 300px;
+    }
+
+    .features-container {
+        width: 100%; 
+        height: auto; 
+        padding: 0.5rem; 
+    }
+
+    .display-4 {
+        font-size: 1.2rem; 
+    }
+
+    .lead {
+        font-size: 0.9rem; 
+    }
+
+    .features-icon {
+        font-size: 1.5rem; 
+    }
+}

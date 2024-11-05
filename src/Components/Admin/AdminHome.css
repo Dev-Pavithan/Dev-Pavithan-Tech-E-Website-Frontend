@@ -1,0 +1,316 @@
+.icon {
+    font-size: 24px;
+    color: #2c0041;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 0 10px;
+  }
+  
+  .icon:hover {
+    color: #9b4ec8;
+  }
+  
+  .card {
+    background-color: #f8f0ff6b;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.842);
+  }
+  .av-HomeH5{
+    font-size: 1.5rem;
+    color: #231894;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #7509b4;
+    padding-bottom: 10px;
+    transition: color 0.3s, transform 0.3s;
+  
+  }
+  .HomeH5 {
+    font-size: 1.5rem;
+    color: #231894;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #7509b4;
+    padding-bottom: 10px;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .HomeH5:hover {
+    color: #7a3d99;
+    transform: translateY(-2px);
+  }
+  
+  .total-users,
+  .total-messages {
+    height: 240px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff3b;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .total-users:hover,
+  .total-messages:hover {
+    background-color: #ffffff3b;
+    transform: translateY(-5px);
+  }
+  
+  .message-count {
+    font-size: 5rem;
+    color: #7a3d99;
+    font-weight: 800;
+    margin-top: 10px;
+    transition: color 0.3s;
+  }
+  
+  .message-count:hover {
+    color: #743394;
+  }
+  
+  .done-chart {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .package-list {
+    margin-top: 18px;
+    max-height: 500px;
+    background-color: #ffffff3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .package-card-Admin {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .package-card-Admin:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .package-name {
+    font-size: 1.25rem;
+    color: #5a4fcf;
+    margin-bottom: 10px;
+  }
+  
+  .package-description {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .payment-section {
+    padding: 15px;
+    height: 350px;
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff3b;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .payment-section:hover {
+    background-color: #ffffff60;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .transaction-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f3e8ff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-details h6 {
+    margin-bottom: 8px;
+    color: #5a4fcf;
+  }
+  
+  .detail {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .detail:hover {
+    background-color: #dcd4e8;
+    /* Lighten background on hover */
+  }
+  
+  .detail strong {
+    color: #5a4fcf;
+    /* Change color of strong text */
+  }
+  
+  .recent-transactions {
+    margin-top: 15px;
+  }
+  
+  .transaction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #f8f0ff4b;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .transaction-item:hover {
+    background-color: #f8f0ff6b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.274);
+    /* Add shadow on hover */
+  }
+  
+  .transaction-item p {
+    margin: 5px 0;
+    /* Space out individual details */
+  }
+  
+  .transaction-item strong {
+    color: #5a4fcf;
+    /* Highlight strong text */
+  }
+  
+  .recent-messages {
+    padding: 15px;
+    height: 350px;
+    /* Increased height for Recent Messages */
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  .message-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .message-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+  }
+  
+  .message-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .message-avatar {
+    margin-right: 10px;
+  }
+  
+  .avatar-icon {
+    font-size: 32px;
+    color: #9b4ec8;
+  }
+  
+  .message-content {
+    flex-grow: 1;
+  }
+  
+  .message-timestamp {
+    font-size: 0.8rem;
+    color: #999;
+    margin-left: auto;
+  }
+  
+  .modal-content {
+    border-radius: 10px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+  
+    .total-users,
+    .total-messages,
+    .payment-section,
+    .recent-messages {
+      height: auto;
+      /* Allow height to adjust on smaller screens */
+    }
+  }
+  
+  /* 123456789 */
+  .user-profile-modal .modal-header {
+    background-color: #4a4e69;
+    /* Darker header color */
+    color: #ffffff;
+    /* White text color */
+    border-bottom: 2px solid #9a8c98;
+    /* Slightly lighter bottom border */
+  }
+  
+  .user-profile-modal .modal-body {
+    background-color: #f0efeb;
+    /* Light background for the body */
+    color: #22223b;
+    /* Darker text color */
+  }
+  
+  .user-profile-modal .modal-body p {
+    font-size: 1.1rem;
+    /* Slightly larger font size for readability */
+    line-height: 1.5;
+    /* Increased line height for better spacing */
+  }
+  
+  .user-profile-modal .modal-footer {
+    background-color: #f0efeb;
+    /* Match the body background */
+  }
+  
+  .user-profile-modal .btn-secondary {
+    background-color: #9a8c98;
+    /* Custom button color */
+    border: none;
+    /* Remove default border */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+  }
+  
+  .user-profile-modal .btn-secondary:hover {
+    background-color: #7a7489;
+    /* Darker color on hover */
+  }
+  
