@@ -30,7 +30,7 @@ export default function ManageMessages() {
 
     const fetchMessages = async () => {
       try {
-        const response = await axios.get('https://tech-e-website-backend.vercel.app/contact/all', {
+        const response = await axios.get('http://localhost:7100/contact/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -47,7 +47,7 @@ export default function ManageMessages() {
   const handleSearch = async () => {
     const token = sessionStorage.getItem('token');
     try {
-      const response = await axios.get(`https://tech-e-website-backend.vercel.app/contact/by-email/${searchEmail}`, {
+      const response = await axios.get(`http://localhost:7100/contact/by-email/${searchEmail}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -74,7 +74,7 @@ export default function ManageMessages() {
 
     try {
       await axios.post(
-        'https://tech-e-website-backend.vercel.app/contact/reply',
+        'http://localhost:7100/contact/reply',
         {
           from: userEmail,
           to: replyEmail,

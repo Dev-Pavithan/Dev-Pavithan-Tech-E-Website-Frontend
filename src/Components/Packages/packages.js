@@ -16,7 +16,7 @@ export default function Packages() {
 
   const fetchPackages = async () => {
     try {
-      const response = await axios.get('https://tech-e-website-backend.vercel.app/api/packages');
+      const response = await axios.get('http://localhost:7100/api/packages');
       setPackages(response.data);
     } catch (error) {
       console.error('Error fetching packages:', error);
@@ -106,20 +106,4 @@ export default function Packages() {
 
     </div>
   );
-}
-
-export default function handler(req, res) {
-  // CORS headers
-  res.setHeader('Access-Control-Allow-Origin', 'https://dev-pavithan-tech-e-website-frontend.vercel.app');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  
-  // Handle preflight requests
-  if (req.method === 'OPTIONS') {
-      return res.status(200).end();
-  }
-
-  // Actual API logic
-  res.status(200).json({ data: 'Package data' });
 }

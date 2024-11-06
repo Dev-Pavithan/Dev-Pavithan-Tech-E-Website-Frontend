@@ -27,7 +27,7 @@ export default function Nav({ openLoginModal }) {
     const email = localStorage.getItem('userEmail');
     if (email) {
       try {
-        const response = await fetch(`https://tech-e-website-backend.vercel.app/user/by-email/${email}`, {
+        const response = await fetch(`http://localhost:7100/user/by-email/${email}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('token')}`,
@@ -51,7 +51,7 @@ export default function Nav({ openLoginModal }) {
     try {
       const packageDetails = await Promise.all(
         packageIds.map(async (packageId) => {
-          const response = await fetch(`https://tech-e-website-backend.vercel.app/api/packages/${packageId}`);
+          const response = await fetch(`http://localhost:7100/api/packages/${packageId}`);
           if (response.ok) {
             const packageData = await response.json();
             return packageData.name;

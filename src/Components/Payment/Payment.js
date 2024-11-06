@@ -48,7 +48,7 @@ const CheckoutForm = () => {
 
     try {
       // Create PaymentIntent with the dynamic amount in cents
-      const response = await axios.post('https://tech-e-website-backend.vercel.app/api/payments/payment-intent', {
+      const response = await axios.post('http://localhost:7100/api/payments/payment-intent', {
         amount,
         cardholderName,
       });
@@ -97,7 +97,7 @@ const CheckoutForm = () => {
         localStorage.setItem('userPackages', JSON.stringify(userPackages));
 
         // Save purchase details to the backend (if needed)
-        await axios.post('https://tech-e-website-backend.vercel.app/api/packages/purchase', {
+        await axios.post('http://localhost:7100/api/packages/purchase', {
           userId: sessionStorage.getItem('userId'),
           packageId: sessionStorage.getItem('selectedPackageId'),
           name: packageDetails.name,

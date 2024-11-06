@@ -24,7 +24,7 @@ export default function PackageManagement() {
 
     const fetchPackages = async () => {
         try {
-            const response = await axios.get('https://tech-e-website-backend.vercel.app/api/packages');
+            const response = await axios.get('http://localhost:7100/api/packages');
             setPackages(response.data);
         } catch (error) {
             console.error('Error fetching packages:', error);
@@ -52,7 +52,7 @@ export default function PackageManagement() {
         }
 
         try {
-            await axios.post('https://tech-e-website-backend.vercel.app/api/packages', formData, {
+            await axios.post('http://localhost:7100/api/packages', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
             await fetchPackages();
@@ -77,7 +77,7 @@ export default function PackageManagement() {
         }
 
         try {
-            await axios.put(`https://tech-e-website-backend.vercel.app/api/packages/${editingPackage._id}`, formData, {
+            await axios.put(`http://localhost:7100/api/packages/${editingPackage._id}`, formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
             await fetchPackages();
@@ -102,7 +102,7 @@ export default function PackageManagement() {
 
     const deletePackage = async (id) => {
         try {
-            await axios.delete(`https://tech-e-website-backend.vercel.app/api/packages/${id}`);
+            await axios.delete(`http://localhost:7100/api/packages/${id}`);
             fetchPackages();
         } catch (error) {
             console.error('Error deleting package:', error);

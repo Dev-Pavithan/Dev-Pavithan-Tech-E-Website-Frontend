@@ -25,7 +25,7 @@
 
 //     const fetchUserProfileImage = async () => {
 //       try {
-//         const res = await axios.get('https://tech-e-website-backend.vercel.app//user/profile-image', {
+//         const res = await axios.get('http://localhost:7100/user/profile-image', {
 //           headers: { Authorization: `Bearer ${sessionStorage.getItem('token')}` },
 //         });
 //         setProfileImage(res.data.profileImageUrl || 'path/to/default-placeholder.png');
@@ -164,7 +164,7 @@ export default function AdminDashboard() {
 
     const fetchUserProfileImage = async () => {
       try {
-        const res = await axios.get('https://tech-e-website-backend.vercel.app//user/profile-image', {
+        const res = await axios.get('http://localhost:7100/user/profile-image', {
           headers: { Authorization: `Bearer ${sessionStorage.getItem('token')}` },
         });
         setProfileImage(res.data.profileImageUrl || 'path/to/default-placeholder.png');

@@ -37,7 +37,7 @@ export default function Settings() {
 
   const fetchUserProfileImage = async () => {
     try {
-      const res = await axios.get(`https://tech-e-website-backend.vercel.app/user/profile-image`, {
+      const res = await axios.get(`http://localhost:7100/user/profile-image`, {
         headers: { Authorization: `Bearer ${getToken()}` },
       });
       setProfileImage(res.data.profileImageUrl);
@@ -83,7 +83,7 @@ export default function Settings() {
     formData.append('profileImage', selectedImage);
 
     try {
-      await axios.post(`https://tech-e-website-backend.vercel.app/user/upload-image`, formData, {
+      await axios.post(`http://localhost:7100/user/upload-image`, formData, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
           'Content-Type': 'multipart/form-data',
@@ -104,7 +104,7 @@ export default function Settings() {
     formData.append('profileImage', selectedImage);
 
     try {
-      await axios.patch(`https://tech-e-website-backend.vercel.app/user/update-profile-image`, formData, {
+      await axios.patch(`http://localhost:7100/user/update-profile-image`, formData, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
           'Content-Type': 'multipart/form-data',
@@ -121,7 +121,7 @@ export default function Settings() {
 
   const handleRemoveImage = async () => {
     try {
-      await axios.delete(`https://tech-e-website-backend.vercel.app/user/remove-profile-image`, {
+      await axios.delete(`http://localhost:7100/user/remove-profile-image`, {
         headers: { Authorization: `Bearer ${getToken()}` },
       });
       setProfileImage(''); // Reset the profile image
