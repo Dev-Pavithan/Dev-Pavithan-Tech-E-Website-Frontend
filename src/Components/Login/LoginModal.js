@@ -78,7 +78,7 @@ export default function LoginModal({ show, handleClose, openRegisterModal }) {
                     id: decodedData.sub,
                 };
 
-                const loginResponse = await axios.post('http://localhost:7100/user/login', userData);
+                const loginResponse = await axios.post('https://tech-e-website-backend.vercel.app/user/login', userData);
                 storeUserDetails(loginResponse.data);
                 toast.success('Login successful! Redirecting...', { position: 'top-right', autoClose: 5000 });
 
@@ -109,7 +109,7 @@ export default function LoginModal({ show, handleClose, openRegisterModal }) {
             return;
         }
         try {
-            const loginResponse = await axios.post('http://localhost:7100/user/login', formData);
+            const loginResponse = await axios.post('https://tech-e-website-backend.vercel.app/user/login', formData);
             storeUserDetails(loginResponse.data);
             toast.success('Login successful! Redirecting...', { position: 'top-right', autoClose: 5000 });
 

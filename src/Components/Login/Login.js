@@ -45,7 +45,7 @@
 //           id: decodedData.sub,
 //         };
 
-//         const loginResponse = await axios.post('http://localhost:7100/user/login', userData);
+//         const loginResponse = await axios.post('https://tech-e-website-backend.vercel.app/user/login', userData);
 
 //         storeUserDetails(loginResponse.data);
 
@@ -86,7 +86,7 @@
 //     }
 
 //     try {
-//       const loginResponse = await axios.post('http://localhost:7100/user/login', formData);
+//       const loginResponse = await axios.post('https://tech-e-website-backend.vercel.app/user/login', formData);
       
 //       storeUserDetails(loginResponse.data);
 
@@ -287,7 +287,7 @@ export default function Login() {
           id: decodedData.sub,
         };
 
-        const loginResponse = await axios.post('http://localhost:7100/user/login', userData);
+        const loginResponse = await axios.post('https://tech-e-website-backend.vercel.app/user/login', userData);
 
         storeUserDetails(loginResponse.data);
 
@@ -318,7 +318,7 @@ export default function Login() {
     }
 
     try {
-      const loginResponse = await axios.post('http://localhost:7100/user/login', formData);
+      const loginResponse = await axios.post('https://tech-e-website-backend.vercel.app/user/login', formData);
 
       storeUserDetails(loginResponse.data);
 

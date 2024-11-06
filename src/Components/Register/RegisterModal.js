@@ -59,7 +59,7 @@ export default function RegisterModal({ show, handleClose, openLoginModal }) {
         }
 
         try {
-            const response = await axios.post('http://localhost:7100/user/register', formData);
+            const response = await axios.post('https://tech-e-website-backend.vercel.app/user/register', formData);
             console.log('Registration successful', response.data);
 
             toast.success('Registration successful! You can now log in.', {
@@ -92,7 +92,7 @@ export default function RegisterModal({ show, handleClose, openLoginModal }) {
             };
 
             try {
-                const res = await axios.post('http://localhost:7100/user/register', userData);
+                const res = await axios.post('https://tech-e-website-backend.vercel.app/user/register', userData);
                 console.log('Google Registration successful:', res.data);
                 toast.success('Registration successful! You can now log in.', {
                     position: "top-right",

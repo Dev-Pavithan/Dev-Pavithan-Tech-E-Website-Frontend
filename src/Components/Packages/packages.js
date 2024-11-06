@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TechE from './Logo version04.png'
 import './package.css';
 
 export default function Packages() {
@@ -15,7 +16,7 @@ export default function Packages() {
 
   const fetchPackages = async () => {
     try {
-      const response = await axios.get('http://localhost:7100/api/packages');
+      const response = await axios.get('https://tech-e-website-backend.vercel.app/api/packages');
       setPackages(response.data);
     } catch (error) {
       console.error('Error fetching packages:', error);
@@ -27,7 +28,7 @@ export default function Packages() {
     sessionStorage.setItem('paymentAmount', pkg.price * 100);
     sessionStorage.setItem('selectedPackageName', pkg.name);
     sessionStorage.setItem('selectedPackageDescription', pkg.description);
-    
+
     const userEmail = localStorage.getItem('userEmail');
     if (!userEmail) {
       toast.info("You need to log in to access this package.");
@@ -70,36 +71,38 @@ export default function Packages() {
         </ul>
       </div> */}
 
-<div className="pricing-container">
-<ul class="cards">
-{packages.length > 0 ? (
+      <div className="pricing-container">
+        <ul class="cards">
+          {packages.length > 0 ? (
             packages.map((pkg) => (
-  <li key={pkg._id} >
-    <a href="" class="packagecard" onClick={() => handlePackageClick(pkg)}>
-      <img src={pkg.images[0]} class="card__image" alt="" />
-      <div class="card__overlay">
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="Tech-E logo" />
-          <div class="card__header-text">
-            <h3 class="card__title">{pkg.name}</h3>            
-            <span class="card__status">${pkg.price}</span>
-          </div>
-        </div>
-        <p class="card__description">
-          {pkg.description.split('\n').map((point, index) => (
-            <li key={index} className="bulletPoint">{point}</li>
-          ))}
-        </p>
+              <li key={pkg._id} >
+                <a href="" class="packagecard" onClick={() => handlePackageClick(pkg)}>
+                  <img src={pkg.images[0]} class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+                        <path fill="var(--surface-color)" d="M 40 80 c 22 0 40 -22 40 -40 v 40 Z" />
+                      </svg>
+                      <img class="card__thumb" src={TechE} alt="Tech-E logo" />
+                      <div class="card__header-text">
+                        <h3 class="card__title">{pkg.name}</h3>
+                        <span class="card__status">${pkg.price}</span>
+                      </div>
+                    </div>
+                    <p class="card__description">
+                      {pkg.description.split('\n').map((point, index) => (
+                        <li key={index} className="bulletPoint">{point}</li>
+                      ))}
+                    </p>
+                  </div>
+                </a>
+              </li>
+            ))
+          ) : (
+            <p className="noPackages">No packages available</p>
+          )}
+        </ul>
       </div>
-    </a>      
-  </li>  
-   ))
-  ) : (
-    <p className="noPackages">No packages available</p>
-  )} 
-</ul>
-</div>
 
     </div>
   );

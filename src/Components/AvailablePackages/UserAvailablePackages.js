@@ -14,7 +14,7 @@ export default function UserAvailablePackages({ show, handleClose }) {
       const fetchPackageDetails = async () => {
         try {
           const packagePromises = userPackages.map((packageId) =>
-            fetch(`http://localhost:7100/api/packages/${packageId}`).then((res) => res.json())
+            fetch(`https://tech-e-website-backend.vercel.app/api/packages/${packageId}`).then((res) => res.json())
           );
           const packageData = await Promise.all(packagePromises);
           setPackageDetails(packageData);

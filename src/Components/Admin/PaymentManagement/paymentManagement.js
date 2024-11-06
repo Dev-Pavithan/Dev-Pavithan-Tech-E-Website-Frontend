@@ -13,7 +13,7 @@ export default function PaymentManagement() {
   useEffect(() => {
     const fetchPayments = async () => {
       try {
-        const response = await axios.get('http://localhost:7100/api/payments/payment-intents');
+        const response = await axios.get('https://tech-e-website-backend.vercel.app//api/payments/payment-intents');
         setPayments(response.data);
       } catch (error) {
         console.error('Error fetching payment data:', error);

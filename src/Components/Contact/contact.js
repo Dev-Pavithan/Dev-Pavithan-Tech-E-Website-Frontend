@@ -16,7 +16,7 @@ export default function ContactModal({ show, handleClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:7100/contact', {
+      const response = await fetch('https://tech-e-website-backend.vercel.app/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

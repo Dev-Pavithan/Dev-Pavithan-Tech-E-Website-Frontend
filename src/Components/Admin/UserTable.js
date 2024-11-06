@@ -23,7 +23,7 @@ export default function UserManagement() {
 
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:7100/user/all', {
+        const response = await axios.get('https://tech-e-website-backend.vercel.app/user/all', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUsers(response.data);
@@ -38,7 +38,7 @@ export default function UserManagement() {
   const handleSearch = async () => {
     const token = sessionStorage.getItem('token');
     try {
-      const response = await axios.get(`http://localhost:7100/user/by-email/${searchEmail}`, {
+      const response = await axios.get(`https://tech-e-website-backend.vercel.app/user/by-email/${searchEmail}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -57,7 +57,7 @@ export default function UserManagement() {
   const handleBlockToggle = async (id, currentlyBlocked) => {
     const token = sessionStorage.getItem('token');
     try {
-      const response = await axios.patch(`http://localhost:7100/user/${id}/block`, {}, {
+      const response = await axios.patch(`https://tech-e-website-backend.vercel.app/user/${id}/block`, {}, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

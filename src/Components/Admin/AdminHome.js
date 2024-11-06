@@ -43,7 +43,7 @@ export default function Home() {
     }
 
     try {
-      const userResponse = await axios.get('http://localhost:7100/user/all', {
+      const userResponse = await axios.get('https://tech-e-website-backend.vercel.app//user/all', {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -56,7 +56,7 @@ export default function Home() {
       setData(prev => ({ ...prev, active, blocked }));
 
       // Fetching messages from the new endpoint
-      const messageResponse = await axios.get('http://localhost:7100/contact/all', {
+      const messageResponse = await axios.get('https://tech-e-website-backend.vercel.app//contact/all', {
         headers: { Authorization: `Bearer ${token}` },
       });
       
@@ -93,7 +93,7 @@ export default function Home() {
 
   const fetchPackages = async () => {
     try {
-      const response = await axios.get('http://localhost:7100/api/packages');
+      const response = await axios.get('https://tech-e-website-backend.vercel.app/api/packages');
       setPackages(response.data);
     } catch (error) {
       console.error('Error fetching packages:', error);
@@ -102,7 +102,7 @@ export default function Home() {
 
   const fetchRecentTransactions = async () => {
     try {
-      const response = await axios.get('http://localhost:7100/api/payments/payment-intents');
+      const response = await axios.get('https://tech-e-website-backend.vercel.app/api/payments/payment-intents');
       setRecentTransactions(response.data.slice(0, 3));
     } catch (error) {
       console.error('Error fetching recent transactions:', error);
@@ -111,7 +111,7 @@ export default function Home() {
 
   const fetchTotalIncome = async () => {
     try {
-      const response = await axios.get('http://localhost:7100/api/payments/payment-intents');
+      const response = await axios.get('https://tech-e-website-backend.vercel.app/api/payments/payment-intents');
       const totalIncome = response.data.reduce((sum, transaction) => sum + (transaction.amount || 0), 0);
       setTotalIncome(totalIncome);
     } catch (error) {
