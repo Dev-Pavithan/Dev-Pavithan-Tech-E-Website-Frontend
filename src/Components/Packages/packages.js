@@ -16,7 +16,7 @@ export default function Packages() {
 
   const fetchPackages = async () => {
     try {
-      const response = await axios.get('https://tech-e-website-backend.vercel.app/api/packages');
+      const response = await axios.get('https://tech-e-website-backend.vercel.app');
       setPackages(response.data);
     } catch (error) {
       console.error('Error fetching packages:', error);
