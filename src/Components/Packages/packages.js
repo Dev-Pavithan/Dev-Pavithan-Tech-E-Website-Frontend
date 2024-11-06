@@ -107,3 +107,19 @@ export default function Packages() {
     </div>
   );
 }
+
+export default function handler(req, res) {
+  // CORS headers
+  res.setHeader('Access-Control-Allow-Origin', 'https://dev-pavithan-tech-e-website-frontend.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  
+  // Handle preflight requests
+  if (req.method === 'OPTIONS') {
+      return res.status(200).end();
+  }
+
+  // Actual API logic
+  res.status(200).json({ data: 'Package data' });
+}
